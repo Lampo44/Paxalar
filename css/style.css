@@ -1,0 +1,557 @@
+/* <<<<<< Montserrat Font Import >>>>>> */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* < font-family: 'Montserrat', sans-serif; > */
+/* <<<<<< Source Sans Pro Font Import >>>>>> */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+/* < font-family: 'Source Sans Pro', sans-serif; > */
+/* <<<<<< Raleway Font Import >>>>>> */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap');
+/* < font-family: 'Raleway', sans-serif; > */
+/* < Common CSS > */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+i, p{
+    color: #161616;
+    margin: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
+a, a:hover{
+    text-decoration: none;
+    color: #161616 !important;
+    font-weight: bold;
+}
+ul, ol{
+    list-style: none;
+    margin: 0px;
+}
+
+/* < upper header css > */
+.header-upper{
+    background: #efefef;
+}
+.bg-light{
+    background: #fff !important;
+}
+.header-upper .upper-inner ul li a p{
+    color: #7f7f7f;
+    margin: 10px 0px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.header-upper .upper-right ul li a p{
+    padding-left: 30px;
+}
+
+/* < header lower css > */
+.nav-link{
+    margin: 10px 0px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.btn-header{
+    background: #ff9b1a;
+    color: #fff !important;
+    border: 1px solid #ff9b1a;
+    border-radius: 30px;
+    padding: 8px 10px !important;
+}
+.btn-header:hover{
+    background: #fff;
+    color: black;
+    border: 1px solid #00000049;
+}
+
+/* < banner css starts > */
+.banner{
+    background: url("../img/BannerBG.png") center no-repeat;
+    background-size: cover;
+    padding: 130px 0px;
+    background-color: #00000061;
+    background-blend-mode: darken;
+}
+.banner-header{}
+.banner-header h1{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.banner-counts{
+    font-family: 'Raleway', sans-serif;
+    padding: 35px 0px;
+}
+.banner-counts h6{
+    color: #fff;
+}
+.banner-counts p{
+    color: #fff;
+    font-size: 12px;
+}
+.banner-buttons{}
+.banner-buttons .btn-banner{
+    background: #ff9b1a;
+    border: 1px solid #ff9b1a;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 18px;
+}
+.banner-buttons .btn-banner:hover{
+    background: #fff;
+    color: black;
+    border: 1px solid #00000049;
+}
+.banner-buttons .btn-transparent{
+    color: #fff;
+    border: 1px solid #ffffff6b;
+    border-radius: 30px;
+    transition-duration: .3s;
+    margin-left: 10px;
+}
+.banner-buttons .btn-transparent:hover{
+    color: #161616;
+    background-color: #fff;
+}
+
+/* < Features section starts > */
+.feature-bg{
+    border: 1px solid #00000018;
+    border-radius: 5px;
+    padding: 30px 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    transition: all .5s ease-in-out;
+}
+.feature-bg::before{
+    content: '';
+    background: url("../img/bitcoin-feature.png") center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+}
+.feature-bg:hover::before{
+    transform: scale(1);
+    visibility: visible;
+}
+.feature-bg:hover{}
+.feature-bg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(#d9b303, #ff6e02);
+    top: 0px;
+    z-index: -1;
+    opacity: 88%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    transition-duration: .5s;
+}
+.feature-bg:hover::after{
+    transform: scaleY(1);
+}
+.feature-bg .feature-caption{
+    padding: 0px 50px;
+    margin-top: auto;
+}
+.feature-bg .feature-caption h5{
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.feature-bg:hover .feature-caption p{
+    color: #fff;
+}
+.feature-bg:hover .feature-caption{
+    color: #fff;
+}
+.feature-bg .feature-icon img{
+    width: 60px;
+}
+.feature-bg:hover .feature-icon img{
+    filter: brightness(100);
+}
+
+/* < service css starts > */
+.service-header{
+    position: relative;
+}
+.service-header::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #ff9b1a;
+    position: absolute;
+    bottom: 30px;
+    left: 48%;
+
+}
+.service-header h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+.service-header p{
+    max-width: 50%;
+    margin: auto;
+    padding: 10px 0px;
+}
+.service-features{}
+.service-features h4{
+    padding: 20px 0px;
+    font-weight: bold;
+    font-size: 19px;
+}
+.service-btn{
+    background: #fff;
+    border: 1px solid #00000049;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+.service-btn:hover{
+    color: white !important;
+    background: #161616;
+    border: 1px solid #000;
+}
+
+/* < simple section css > */
+.simple{
+    background: url('../img/blurryBG.png') center no-repeat;
+    background-size: cover;
+    background-color: #00000069;
+    background-blend-mode: multiply;
+    color: #FFF;
+    padding-top: 80px !important;
+}
+.simple-inner .iphone-6{
+    margin-left: 120px;
+}
+.simple-inner-header{
+    position: relative;
+}
+.simple-inner-header h5{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+.simple-inner-header h5::after{
+    content: '';
+    height: 3px;
+    width: 50px;
+    background: #ff9b1a;
+    position: absolute;
+    bottom: -20px;
+    left: 14px;
+}
+.steps h6{
+    font-family: 'Raleway', sans-serif;
+}
+.steps p{
+    color: #fff;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+/* < stats css starts > */
+.stats{
+    background: #ff9b1a;
+    color: #fff;
+}
+.stats h3{
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+.stats p{
+    color: #fff;
+    font-size: 13px;
+}
+
+/* < teamwork css > */
+.teamwork-inner{
+    position: relative;
+}
+.teamwork-inner::after{
+    content: '';
+    height: 3px;
+    width: 60px;
+    background-color: #ff9b1a;
+    position: absolute;
+    bottom: -10px;
+    left: 46%;
+}
+.teamwork-inner h2{
+    font-size: 21px;
+    font-weight: bold;
+}
+.teamwork-inner p{
+    padding: 10px 0px;
+}
+.teamwork-inner-bottom h4{
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.teamwork-inner-bottom p{
+    color: #ff9b1a;
+    padding: 15px 0px;
+    font-size: 12px;
+}
+
+/* < CONSULTATION CSS > */
+.consultation{
+    background: url("../img/RegistrationBG.png") center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.consultation-header{
+    position: relative;
+}
+.consultation-header::after{
+    content: '';
+    height: 3px;
+    width: 60px;
+    background: #ff9b1a;
+    position: absolute;
+    bottom: -15px;
+    left: 48%;
+}
+.consultation-form input{
+    background: transparent;
+    border-radius: 8px;
+}
+.consultation-form input::placeholder{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+.consultation-form .input-question{
+    padding-bottom: 50px;
+}
+.consultation-form input:focus{
+    background: transparent;
+    border-radius: 8px;
+}
+.consultation-btn{
+    background: #ff9b1a;
+    border: 1px solid #ff9b1a;
+    border-radius: 30px;
+    color: #fff !important;
+    font-size: 12px;
+    padding: 8px 40px;
+}
+.consultation-btn:hover{
+    background: #fff;
+    color: black;
+    font-weight: 400;
+    border: 1px solid #00000049;
+}
+
+/* < blog section css > */
+.blog-header{
+    position: relative;
+    margin-bottom: 50px;
+}
+.blog-header::after{
+    content: '';
+    height: 3px;
+    width: 60px;
+    background: #ff9b1a;
+    position: absolute;
+    bottom: -15px;
+    left: 48%;
+}
+.blog-header h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.blog-header p{
+    padding: 8px 0px;
+}
+.blog-inner{
+    border: 1px solid #16161633;
+    border-radius: 13px;
+}
+.blog-inner img{
+    position: relative;
+}
+.blog-inner img::after{
+    content: '';
+    background: #f26c4f url("../img/Pencil.png") no-repeat ;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    bottom: 0px;
+}
+.admin{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.admin ul{
+    justify-content: space-between;
+}
+.blog-container h6{
+    padding-left: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+.blog-container p{
+    padding-left: 15px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+/* < feedback section css > */
+.feedback-header h2{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+.feedback-header h2::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 60px;
+    background: #ff9b1a;
+    bottom: -30px;
+    left: 48%;
+}
+.feedback-header p{
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+.slider h6{
+    font-weight: bold;
+    font-size: 14px;
+}
+.slider p{
+    color: #ff9b1a;
+    font-size: 12px;
+}
+
+/* < footer css starts > */
+.main-footer{
+    color: #fff;
+    background: #101010;
+    border-top: 3px solid #ff9b1a;
+}
+.footer-logo p{
+    color: #989898;
+    font-size: 12px;
+}
+.social-icons ul{
+    padding: 0px;
+}
+.social-icons ul li{
+    margin-right: 10px;
+}
+.social-icons ul li a{
+    border: 1px solid #3d3c3a;
+    border-radius: 30px;
+}
+.social-icons ul li a:hover{
+    border: 1px solid #00aeed;
+}
+.social-icons ul li a:hover i{
+    color: #00aeed;
+}
+.social-icons ul li:nth-child(1) a{
+    padding: 9px 14px;
+}
+.social-icons ul li:nth-child(2) a{
+    padding: 9px 12px;
+}
+.social-icons ul li:nth-child(3) a{
+    padding: 9px 8px;
+}
+.social-icons ul li:nth-child(4) a{
+    padding: 9px 11px;
+}
+.social-icons ul li i{
+    color: #3d3c3a;
+}
+.footer-header h4{
+    position: relative;
+    margin-bottom: 50px;
+}
+.footer-header h4::after{
+    position: absolute;
+    content: '';
+    background: #ff9b1a;
+    height: 3px;
+    width: 60px;
+    bottom: -20px;
+    left: 0pc;
+}
+.information{
+    display: flex;
+    padding: 10px 0px;
+}
+.information i, p{
+    color: #989898;
+}
+.information i{
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.footer-header ul{
+    padding: 0px;
+}
+.form-footer input{
+    border-radius: 30px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+.form-footer{
+    position: relative;
+}
+.form-footer .btn-footer{
+    position: absolute;
+    background: #ff9b1a;
+    border: 1px solid #ff9b1a;
+    top: 25px;
+    padding: 9px 15px;
+    right: 1px;
+    border-radius: 30px;
+}
+.form-footer .btn-footer i{
+    color: #fff;
+}
+.bottom-footer{
+    background: black;
+}
+.bottom-footer-inner p{
+    color: #504e4e;
+    font-size: 12px;
+}
+.bottom-footer-inner ul{
+    float: right;
+}
+.bottom-footer-inner ul li{
+    padding: 0px 20px 20px;
+}
+.bottom-footer-inner ul li a{
+    color: #737272 !important;
+    font-weight: bold;
+}
