@@ -287,6 +287,82 @@ ul, ol{
     font-size: 13px;
 }
 
+/* < support css > */
+.support{
+    position: relative;
+}
+.support-inner .center-img{
+    padding: 200px 0px;
+}
+.support-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.support-box span{
+    position: relative;
+}
+.support-box img{
+    position: absolute;
+}
+.support-box i{
+    font-size: 19px;
+}
+.support-box b{
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.top{
+    top: 120px;
+}
+.top img{
+    top: -20px;
+    left: 6px;
+}
+.left{
+    left: 25%;
+}
+.right{
+    right: 27%;
+}
+.right img{
+    left: 15px;
+}
+.left-green{
+    top: 47%;
+    left: 18%;
+}
+.left-green img{
+    top: -21px;
+}
+.right-green{
+    top: 47%;
+    right: 18%;
+}
+.right-green img{
+    left: 20px;
+    top: -20px;
+}
+.bottom{
+    bottom: 100px;
+}
+.bottom img{
+    bottom: 25px;
+    left: 10px;
+}
+.bottom-left img{
+    left: -20px;
+}
+.red i{
+    color: #f05154;
+}
+.blue i{
+    color: #43c5ca;
+}
+.green i{
+    color: #63cd68;
+}
+
 /* < teamwork css > */
 .teamwork-inner{
     position: relative;
@@ -392,16 +468,22 @@ ul, ol{
     border: 1px solid #16161633;
     border-radius: 13px;
 }
-.blog-inner img{
+.blog-img{
     position: relative;
 }
-.blog-inner img::after{
-    content: '';
-    background: #f26c4f url("../img/Pencil.png") no-repeat ;
+.pencil{
+    background: #f26c4f url("../img/Pencil.png") center no-repeat;
     position: absolute;
-    height: 20px;
-    width: 20px;
-    bottom: 0px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    bottom: -20px;
+    left: 10px;
+    transition-duration: 0.3s;
+}
+.pencil:hover{
+    bottom: -30px;
 }
 .admin{
     padding-left: 20px;
