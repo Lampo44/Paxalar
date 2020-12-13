@@ -1,0 +1,286 @@
+/* <<<<<<<<<<<<<<<<<<<< Responsive css starts >>>>>>>>>>>>>>>>>>>>>>>> */
+  
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+  */
+
+  @media (min-width: 1281px) {
+    
+    .copyright{
+      position: absolute !important;
+      display: inherit;
+    }
+    .bottom-footer-inner{
+      display: inline-block !important;
+      margin-left: 35%;
+      margin-top: -40px;
+      padding-top: 10px;
+    }
+    .bottom-footer-inner ul li {
+      padding: 0px 10px 20px !important;
+    }
+    .copyright{
+      position: absolute;
+      margin-left: 0%;
+      margin-top: 10px;
+    }
+    
+  }
+
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .bottom-footer-inner{
+      display: flex;
+      justify-content: center;
+      margin: 10px 0px;
+      padding-top: 0px !important;
+    }
+    
+  }
+
+  /*
+    ##Device = Custom
+    ##Screen Width = 992px 
+  */
+  @media (min-width: 992px){
+
+    .nav-link{
+      margin-left: 5px !important;
+    }
+    .copyright{
+      position: initial !important;
+      padding-top: 10px;
+    }
+    .bottom-footer-inner{
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .feature-bg .feature-caption {
+      padding: 0px 15px !important;
+    }
+    .simple-inner .iphone-6{
+      width: 70%;
+      margin-top: 100%;
+      margin-left: 20px !important;
+    }
+    .simple-inner .rectingle{
+      width: 50%;
+      height: 70%;
+    }
+    .right-green{
+      right: 5% !important;
+    }
+    .left-green{
+      left: 10% !important;
+    }
+    .right{
+      right: 20% !important;
+    }
+    .left{
+      left: 20% !important;
+    }
+    .bottom-left{
+      left: 23% !important;
+    }
+    .blog-container p{
+      padding-bottom: 5px !important;
+    }
+    .blog-container ul{
+      padding-left: 0px !important;
+      margin-top: 15px;
+      margin-left: -20px;
+    }
+    .social-icons ul li a{
+      border: 1px solid #00aeed !important;
+    }
+    .social-icons ul li a i{
+      color: #00aeed;
+    }
+    .bottom-footer-inner{
+      display: flex;
+      justify-content: center;
+    }
+    .bottom-footer-inner ul li {
+      padding: 10px 10px 20px !important;
+      margin-top: 20px;
+    }
+    .bottom-footer{
+      position: relative;
+    }
+    .copyright{
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .banner-counts{
+      padding: 15px !important;
+    }
+    .iphone-6{
+      visibility: hidden;
+      display: none;
+    }
+    .stats h3{
+      font-size: 38px;
+    }
+    .stats p{
+      font-size: 18px !important;
+    }
+    .center-img{
+      width: 50%;
+    }
+    .left {
+      left: 13% !important;
+    }
+    .right {
+      right: 10% !important;
+    }
+    .left-green {
+      left: 7% !important;
+    }
+    .right-green {
+      right: 1% !important;
+    }
+    .bottom-left{
+      left: 19% !important;
+    }
+    .social-icons{
+      display: flex;
+      justify-content: center;
+    }
+    .information{
+      display: flex;
+      justify-content: center;
+    }
+    .footer-header h4::after{
+      left: 44% !important;
+    }
+    .copyright{
+      position: inherit !important;
+      text-align: center;
+    }
+    .bottom-footer-inner ul li {
+      padding: 5px !important;
+    }
+    .bottom-footer-inner ul li a{
+      font-size: 10px;
+    }
+    .social-icons ul li a{
+      border: 1px solid #00aeed !important;
+    }
+    .social-icons ul li a i{
+      color: #00aeed;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .banner-counts{
+      padding: 15px 0px !important;
+    }
+    .iphone-6{
+      visibility: hidden;
+      display: none;
+    }
+    .rectingle{
+      height: 80% !important;
+    }
+    .center-img{
+      width: 48%;
+    }
+    .left {
+      left: 14% !important;
+    }
+    .right {
+      right: 5% !important;
+    }
+    .left-green {
+      left: 7% !important;
+    }
+    .right-green {
+      right: -3% !important;
+      width: 32%;
+    }
+    .bottom {
+      bottom: 85px !important;
+    }
+    .bottom-left{
+      left: 22% !important;
+    }
+    .social-icons{
+      display: flex;
+      justify-content: center;
+    }
+    .information{
+      display: flex;
+      justify-content: center;
+    }
+    .footer-header h4::after{
+      left: 44% !important;
+    }
+    .copyright{
+      position: inherit !important;
+      text-align: center;
+    }
+    .social-icons ul li a{
+      border: 1px solid #00aeed !important;
+    }
+    .social-icons ul li a i{
+      color: #00aeed;
+    }
+    .bottom-footer-inner ul li {
+      padding: 5px !important;
+    }
+    .bottom-footer-inner ul li a{
+      font-size: 7px;
+    }
+    .social-icons ul li a{
+      border: 1px solid #00aeed !important;
+    }
+    .social-icons ul li a i{
+      color: #00aeed;
+    }
+    
+  }

@@ -246,7 +246,7 @@ ul, ol{
     padding-top: 80px !important;
 }
 .simple-inner .iphone-6{
-    margin-left: 120px;
+    margin-left: -20px;
 }
 .simple-inner-header{
     position: relative;
@@ -622,6 +622,9 @@ ul, ol{
 }
 .bottom-footer{
     background: black;
+}
+.copyright{
+    position: absolute;
 }
 .bottom-footer-inner p{
     color: #504e4e;
