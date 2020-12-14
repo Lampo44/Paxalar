@@ -523,13 +523,41 @@ ul, ol{
     margin-top: 60px;
     padding-bottom: 20px;
 }
+.slider-img{
+    position: relative;
+}
+.quote{
+    position: absolute;
+    bottom: 44%;
+    left: 51%;
+    background: #ff9b1a;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+.quote i{
+    color: #fff;
+}
+.slider{
+    position: inherit;
+    margin-top: 10px;
+    left: 0px;
+}
 .slider h6{
+    color: #161616;
     font-weight: bold;
     font-size: 14px;
 }
 .slider p{
     color: #ff9b1a;
     font-size: 12px;
+}
+.carousel-icon .fa{
+    transition-duration: .3s;
+    font-size: 24px;
+}
+.carousel-icon:hover .fa{
+    color: #ff9b1a !important;
 }
 
 /* < footer css starts > */
